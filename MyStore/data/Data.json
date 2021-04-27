@@ -1,0 +1,16 @@
+﻿{
+  "products": [
+    {
+      "name": "Apple",
+      "color": "Green"
+    },
+    {
+      "name": "Banana",
+      "color": "Yellow"
+    },
+    {
+      "name": "Orange",
+      "color": "Orange"
+    }
+  ]
+}
