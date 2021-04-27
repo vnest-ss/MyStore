@@ -1,7 +1,12 @@
-// MyStore.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿#include "JsonParcer.h"
 
-int main()
+
+int main(int argc, char *argv[])
 {
-	// Add some code here
+
+	JsonParcer obj("..\\MyStore\\data\\Data.json");
+	obj.Deserialization();
+	obj.ShowData();
+
+	return 0;
 }
