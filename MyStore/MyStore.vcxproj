@@ -117,7 +117,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,11 +142,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InfoProduct.cpp" />
     <ClCompile Include="MyStore.cpp" />
+    <ClCompile Include="src\GeneratorData.cpp" />
     <ClCompile Include="src\JsonParcer.cpp" />
+    <ClCompile Include="src\StorageData.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\include\GeneratorData.h" />
+    <ClInclude Include="src\include\InfoProduct.h" />
     <ClInclude Include="src\include\JsonParcer.h" />
+    <ClInclude Include="src\include\StorageData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
