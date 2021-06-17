@@ -2,15 +2,18 @@
   "products": [
     {
       "name": "Apple",
-      "color": "Green"
+      "color": "Green",
+      "price": "150"
     },
     {
       "name": "Banana",
-      "color": "Yellow"
+      "color": "Yellow",
+      "price": "290"
     },
     {
       "name": "Orange",
-      "color": "Orange"
+      "color": "Orange",
+      "price": "300"
     }
   ]
 }

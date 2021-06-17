@@ -10,8 +10,10 @@ InfoProduct GeneratorData::GeneratedProduct()
 	int index_color = rand() * ((max_index_colors - 0 + 0.999) / RAND_MAX) + 0;
 	int index_name = rand() * ((max_index_names - 0 + 0.999) / RAND_MAX) + 0;
 
+
 	data.m_product_color = m_colors[index_color];
 	data.m_product_name = m_names[index_name];
+	data.m_price = rand() % (m_max_price - m_min_price + 1) + m_min_price;
 	m_data.push_back(data);
 
 	return data;
