@@ -45,6 +45,19 @@ bool JsonParcer::Deserialization()
 					int left_index = text.find('"', index);
 					int right_index = text.find('"', left_index + 1);
 					store.m_product_color = text.substr(left_index + 1, right_index - left_index - 1);
+				}
+			}
+		}
+		if (text.find("price") != std::string::npos)
+		{
+			for (int i = 0; i < text.size(); i++)
+			{
+				if (text[i] == ':')
+				{
+					int index = text.find(':');
+					int left_index = text.find('"', index);
+					int right_index = text.find('"', left_index + 1);
+					store.m_price = std::stoi(text.substr(left_index + 1, right_index - left_index - 1));
 
 					if (store.m_product_color.size() > maximum_lengthe_of_word || store.m_product_name.size() > maximum_lengthe_of_word)
 						break;

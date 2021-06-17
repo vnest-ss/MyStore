@@ -9,6 +9,8 @@ class GeneratorData
 private:
 
 	const int m_max_amount_data = 0;
+	const int m_max_price = 300;
+	const int m_min_price = 100;
 	std::vector<InfoProduct> m_data;
 	std::vector<std::string> m_colors = { "green", "blue", "yellow", "orange", "pink", "black", "white", "red"};
 	std::vector<std::string> m_names = { "apple", "banana", "orange", "pineapple", "cherry", "pomegranate", "watermelon", "kiwi"};
