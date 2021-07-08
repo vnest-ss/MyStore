@@ -27,7 +27,7 @@ class JsonObject
 {
 public:
 	enum class ObjectType { Object, Array, Value };
-	
+
 	JsonObject(const ObjectType& type = ObjectType::Value);
 	bool LoadFromFile(const std::string& path);
 

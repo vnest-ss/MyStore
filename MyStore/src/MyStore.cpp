@@ -4,7 +4,6 @@
 #include <windows.h>
 #include <filesystem>
 
-const int period_for_element_milliseconds = 1000;
 using namespace std::chrono;
 
 // This variable is needed to avoid confusion with relative paths in different modules
@@ -15,6 +14,7 @@ const std::string gProjectPath = std::filesystem::current_path().generic_string(
 int main(int argc, char* argv[])
 {
 	StorageData storage;
+	const int period_for_element_milliseconds = Settings::Instance().GetTimeGenerate();
 
 	storage.m_Parcer.Deserialization();
 	storage.m_Parcer.ShowData();

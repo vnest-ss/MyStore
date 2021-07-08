@@ -147,12 +147,14 @@
     <ClCompile Include="src\JsonObject.cpp" />
     <ClCompile Include="src\JsonParcer.cpp" />
     <ClCompile Include="src\MyStore.cpp" />
+    <ClCompile Include="src\Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\GeneratorData.h" />
     <ClInclude Include="src\include\InfoProduct.h" />
     <ClInclude Include="src\include\JsonObject.h" />
     <ClInclude Include="src\include\JsonParcer.h" />
+    <ClInclude Include="src\include\Settings.h" />
     <ClInclude Include="src\include\StorageData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
