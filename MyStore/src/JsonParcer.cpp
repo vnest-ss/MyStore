@@ -1,9 +1,8 @@
 #include "JsonParcer.h"
 #include <fstream>
 #include <iostream>
+#include <Settings.h>
 
-const int maximum_lengthe_of_word = 20;
-const int maximum_amounut_of_data = 5000;
 
 bool JsonParcer::Deserialization()
 {
@@ -14,6 +13,8 @@ bool JsonParcer::Deserialization()
 
 	std::string text = {};
 	InfoProduct store;
+	const int maximum_lengthe_of_word = Settings::Instance().GetMaxLength();
+	const int maximum_amounut_of_data = Settings::Instance().GetMaxAmoutGoods();
 
 	while (!file.eof())
 	{

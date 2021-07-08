@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "max_length": 20,
+    "max_price": 300,
+    "min_price": 100,
+    "max_amount_goods": 5000,
+    "path_goods": "..\MyStore\data\Data.json",
+    "time_generate": 1000
+  }
+  }

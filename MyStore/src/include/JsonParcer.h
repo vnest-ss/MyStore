@@ -13,7 +13,7 @@ private:
 public:
 
 	JsonParcer() = delete;
-	JsonParcer(const char* path) : m_file_path(path) {};
+	JsonParcer(const std::string& obj) : m_file_path(obj) {};
 	JsonParcer(const JsonParcer& obj) = delete;
 	JsonParcer(const JsonParcer&& obj) = delete;
 
